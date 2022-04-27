@@ -24,7 +24,6 @@ img{
   padding: 0.5rem;
   border-radius: 3%;
   background-color: grey;
-  z-index: 12;
 }
 
 /* Adding color when requirement met. */
@@ -34,4 +33,20 @@ img{
 
 .cancelbtn{
   margin-top: 1rem;
+}
+
+@media (max-width: 650px) {
+  .form-section{
+    width: 100%;
+    border-radius: 0;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .form-section{
+    position: relative;
+    top: 110px;
+  }
+
 }

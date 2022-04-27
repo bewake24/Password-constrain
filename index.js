@@ -1,14 +1,14 @@
-var myInput = document.getElementById("pass");
+var inputpass = document.getElementById("pass");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
 var specialchar = document.getElementById("specialchar");
 
-myInput.onkeyup = function() {
+inputpass.onkeyup = function() {
   // Validate lowercase letters
   var lowerCaseLetters = /[a-z]/g;
-  if(myInput.value.match(lowerCaseLetters)) {
+  if(inputpass.value.match(lowerCaseLetters)) {
     letter.classList.remove("invalid");
     letter.classList.add("valid");
   } else {
@@ -18,7 +18,7 @@ myInput.onkeyup = function() {
 
   // Validate capital letters
   var upperCaseLetters = /[A-Z]/g;
-  if(myInput.value.match(upperCaseLetters)) {
+  if(inputpass.value.match(upperCaseLetters)) {
     capital.classList.remove("invalid");
     capital.classList.add("valid");
   } else {
@@ -28,7 +28,7 @@ myInput.onkeyup = function() {
 
   // Validate numbers
   var numbers = /[0-9]/g;
-  if(myInput.value.match(numbers)) {
+  if(inputpass.value.match(numbers)) {
     number.classList.remove("invalid");
     number.classList.add("valid");
   } else {
@@ -38,7 +38,7 @@ myInput.onkeyup = function() {
 
     // Validate special characters
     var special = /[!@#$%^&*]/g;
-    if(myInput.value.match >= 8) {
+    if(inputpass.value.match >= 8) {
       specialchar.classList.remove("invalid");
       specialchar.classList.add("valid");
     } else {
@@ -47,7 +47,7 @@ myInput.onkeyup = function() {
     }
 
   // Validate length
-  if(myInput.value.length >= 8) {
+  if(inputpass.value.length >= 8) {
     length.classList.remove("invalid");
     length.classList.add("valid");
   } else {
