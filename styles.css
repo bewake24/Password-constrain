@@ -1,6 +1,5 @@
  .form-section {
   position: relative;
-  /* top: 200px; */
   border-radius: 2%;
   background-color: #06113C;
   color: white;
@@ -8,6 +7,10 @@
   width: 70%;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img{
+  border-radius: 50%;
 }
 
 .col-12 {
@@ -24,24 +27,11 @@
   z-index: 12;
 }
 
-/* Add a green text color and a checkmark when the requirements are right */
+/* Adding color when requirement met. */
 .valid {
   color: #06113C;
 }
 
-/* Add a white text color and an "x" when the requirements are wrong */
-/* .invalid {
-  color: white;
-} */
-
 .cancelbtn{
   margin-top: 1rem;
-}
-
-
-/* untitled.html */
-
-
-.avatar{
-  border-radius: 50%
 }
