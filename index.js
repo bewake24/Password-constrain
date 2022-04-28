@@ -38,7 +38,7 @@ inputpass.onkeyup = function() {
 
     // Validate special characters
     var special = /[!@#$%^&*]/g;
-    if(inputpass.value.match >= 8) {
+    if(inputpass.value.match(special)) {
       specialchar.classList.remove("invalid");
       specialchar.classList.add("valid");
     } else {

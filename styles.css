@@ -1,6 +1,6 @@
- .form-section {
+.form-section {
   position: relative;
-  border-radius: 2%;
+  border-radius: 3%/5%;
   background-color: #06113C;
   color: white;
   margin: auto;
@@ -35,6 +35,7 @@ img{
   margin-top: 1rem;
 }
 
+/* Making page respoinsive */
 @media (max-width: 650px) {
   .form-section{
     width: 100%;
@@ -48,5 +49,10 @@ img{
     position: relative;
     top: 110px;
   }
+}
 
+@media (max-width: 992px) and (min-width: 650px){
+  .form-section{
+    border-radius: 5%/3%;
+  }
 }
